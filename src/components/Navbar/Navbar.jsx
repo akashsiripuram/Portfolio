@@ -43,7 +43,7 @@ export default function Navbar() {
             <a href="#contact" className="cursor-pointer bg-white text-black px-4 py-1 rounded-2xl">Contact</a>
           </div>
           <img
-            src="/src/assets/profile.jpg"
+            src="/public/profile.jpg"
             className="angled-profile"
             alt=""
           />

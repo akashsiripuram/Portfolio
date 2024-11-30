@@ -10,7 +10,7 @@ export default function Education() {
 
         <div className="relative flex justify-center my-10 group">
           <img
-            src="/src/assets/Education.jpg"
+            src="/public/Education.jpg"
             className="h-[400px] w-[550px]"
             alt="Education"
           />

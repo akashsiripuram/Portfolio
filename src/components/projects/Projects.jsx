@@ -20,7 +20,7 @@ export default function Projects() {
               className="w-full"
             >
               <img
-                src="/src/assets/eduWave.png"
+                src="/public/eduWave.png"
                 alt="EduWave"
                 className="h-48 w-full object-cover mx-auto rounded-t-lg"
               />
@@ -42,7 +42,7 @@ export default function Projects() {
               className="w-full"
             >
               <img
-                src="/src/assets/Airbnb.webp"
+                src="/public/Airbnb.webp"
                 alt="Airbnb"
                 className="h-48 w-full object-cover mx-auto rounded-t-lg"
               />
@@ -64,7 +64,7 @@ export default function Projects() {
               className="w-full"
             >
               <img
-                src="/src/assets/serenity.jpg"
+                src="/public/serenity.jpg"
                 alt="Serenity"
                 className="h-48 w-full object-cover mx-auto rounded-t-lg"
               />
