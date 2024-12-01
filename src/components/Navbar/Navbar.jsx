@@ -34,12 +34,13 @@ export default function Navbar() {
           </div>
         </div>
         <div className="flex flex-col w-1/2 bg-black angled-box align-baseline justify-between">
-          <div className="flex navbar-options flex-row justify-center text-white px-5 py-5 pb-12 space-x-16 font-semibold ">
+          <div className="flex navbar-options flex-row justify-center text-white px-5 py-5 pb-12 space-x-10 font-semibold ">
             {/* Update to anchor links */}
+            <a href="#about" className="cursor-pointer">About</a>
             <a href="#education" className="cursor-pointer">Education</a>
             <a href="#skills" className="cursor-pointer">Skills</a>
             <a href="#projects" className="cursor-pointer">Projects</a>
-            <a href="#resume" className="cursor-pointer">Resume</a>
+            <a href="/AkashSiripuram.pdf" target="_blank" className="cursor-pointer">Resume</a>
             <a href="#contact" className="cursor-pointer bg-white text-black px-4 py-1 rounded-2xl">Contact</a>
           </div>
           <img
@@ -48,6 +49,7 @@ export default function Navbar() {
             alt=""
           />
         </div>
+        
       </div>
     </>
   );
