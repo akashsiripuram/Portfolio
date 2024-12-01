@@ -6,7 +6,7 @@ import Projects from "../components/projects/Projects";
 
 export default function Layout() {
   return (
-    <div className="bg-gray-300">
+    <div className="bg-gray-300 w-screen">
       <Navbar/>
     
       <div id="education">

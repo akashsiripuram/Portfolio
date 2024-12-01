@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="flex flex-row justify-between h-screen w-screen bg-black">
         <div className="flex flex-col justify-between w-1/2 bg-gray-300 text-lg px-5 py-5 pl-24">
           <div>
-            <h1 className="font-semibold cursor-pointer">My Portfolio</h1>
+            <a href="/" className="font-semibold cursor-pointer">My Portfolio</a>
           </div>
           <div className="">
             <h3 className="text-2xl font-bold mb-6">Hi, I am</h3>
@@ -34,7 +34,7 @@ export default function Navbar() {
           </div>
         </div>
         <div className="flex flex-col w-1/2 bg-black angled-box align-baseline justify-between">
-          <div className="flex navbar-options flex-row justify-center text-white px-5 py-5 pb-12 space-x-16 font-semibold mr-8">
+          <div className="flex navbar-options flex-row justify-center text-white px-5 py-5 pb-12 space-x-16 font-semibold ">
             {/* Update to anchor links */}
             <a href="#education" className="cursor-pointer">Education</a>
             <a href="#skills" className="cursor-pointer">Skills</a>

@@ -3,7 +3,7 @@ import "./Projects.css";
 export default function Projects() {
   return (
     <>
-      <div className="flex flex-col w-4/5 md:w-4/5 lg:w-3/4 mx-auto bg-gray-300 mt-16 p-6 rounded-lg">
+      <div className="flex flex-col w-4/5 md:w-4/5 lg:w-3/4 mx-auto bg-gray-300 mt-16 p-6 rounded-lg w-screen">
         <div className="flex flex-row justify-center mb-8">
           <div className="text-2xl font-bold text-center text-black border-2 border-black px-4 py-2">
             Projects

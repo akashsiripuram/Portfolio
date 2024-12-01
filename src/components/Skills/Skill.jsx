@@ -3,7 +3,7 @@ import "./Skill.css";
 export default function Skill() {
   return (
     <>
-      <div className="flex flex-col w-4/5 mx-auto bg-gray-300 mt-16 py-8">
+      <div className="flex flex-col  mx-auto bg-gray-300 mt-16 py-8 w-screen">
         <div className="flex flex-row justify-center border-black border-2 py-2 w-48 mx-auto mb-8">
           <div className="text-xl text-center font-bold">Skills</div>
         </div>
