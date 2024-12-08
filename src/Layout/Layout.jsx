@@ -9,7 +9,7 @@ import About from "../components/about/About";
 
 export default function Layout() {
   return (
-    <div className="bg-gray-300 w-screen " >
+    <div className="bg-gray-300 " >
       <Navbar/>
       
       <div id="about">

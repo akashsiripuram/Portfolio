@@ -1,9 +1,11 @@
 import "./Navbar.css";
-import ToggleButton from "../ToggleButton/ToggleButton";
 import { useState } from "react";
 
 export default function Navbar() {
-  // const [isOpened,setIsOpened] =useState(false);
+  const [isOpened, setIsOpened] = useState(false);
+  const toggleMenu = () => {
+    setIsOpened(!isOpened);
+  };
 
   return (
     <>
@@ -13,19 +15,63 @@ export default function Navbar() {
           <a href="/" className="text-white cursor-pointer font-semibold">
             My Portfolio
           </a>
-          <ToggleButton />
+          <i
+            className="fa-solid fa-bars md:hidden block text-white cursor-pointer"
+            onClick={toggleMenu}></i>
         </div>
-        <div className="text-center flex flex-row justify-center mt-24 mb-10 ml-8">
-        <img
-          src="/profile.jpg"
-          className="rounded-full h-[300px] w-[300px]  border-2 border-white pt-12"
-          alt=""
-        />
+        <div
+          className={`md:hidden flex flex-col w-full left-0 top-24 items-center gap-8 mt-10 font-semibold text-lg transition-all duration-500 ease-in-out ${
+            isOpened ? "translate-y-0 opacity-100 pointer-events-auto" : "-translate-y-10 opacity-0 pointer-events-none absolute"
+          }`}>
+          <a
+            href="#about"
+            className="cursor-pointer w-full text-center p-4 text-white">
+            About
+          </a>
+          <a
+            href="#education"
+            className="cursor-pointer w-full text-center p-4 text-white">
+            Education
+          </a>
+          <a
+            href="#skills"
+            className="cursor-pointer w-full text-center p-4 text-white">
+            Skills
+          </a>
+          <a
+            href="#projects"
+            className="cursor-pointer w-full text-center p-4 text-white">
+            Projects
+          </a>
+          <a
+            href="/AkashSiripuram.pdf"
+            target="_blank"
+            className="cursor-pointer text-white p-4 w-full text-center ">
+            Resume
+          </a>
+          <a
+            href="#contact"
+            className="cursor-pointer text-white p-4 w-full text-center  ">
+            Contact
+          </a>
         </div>
-        <h3 className="text-xl text-center font-bold mb-3 text-white">Hi, I am</h3>
-        <h1 className="text-3xl text-center font-bold text-white">Akash Siripuram</h1>
-        <div className="text-gray-400 text-center font-bold text-xl mt-2">
-          Web Developer
+        <div className={`${isOpened ? "hidden" : "block"}`}>
+          <div className="text-center flex flex-row justify-center mt-24 mb-10 ml-8">
+            <img
+              src="/profile.jpg"
+              className="rounded-full h-[300px] w-[300px]  border-2 border-white pt-12"
+              alt=""
+            />
+          </div>
+          <h3 className="text-xl text-center font-bold mb-3 text-white">
+            Hi, I am
+          </h3>
+          <h1 className="text-3xl text-center font-bold text-white">
+            Akash Siripuram
+          </h1>
+          <div className="text-gray-400 text-center font-bold text-xl mt-2">
+            Web Developer
+          </div>
         </div>
       </div>
 
@@ -98,8 +144,6 @@ export default function Navbar() {
               Contact
             </a>
           </div>
-
-        
 
           {/* Profile Image */}
           <img src="/profile.jpg" className="angled-profile" alt="" />
