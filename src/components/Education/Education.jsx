@@ -11,11 +11,11 @@ export default function Education() {
         <div className="relative flex justify-center my-10 group">
           <img
             src="/Education.jpg"
-            className="h-[400px] w-[550px]"
+            className="md:h-[400px] md:w-[550px] h-[250px] w-[80%]"
             alt="Education"
           />
 
-          <div className="absolute flex flex-col items-center justify-center h-[400px] w-[550px] bg-gray-900 bg-opacity-80 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="absolute flex flex-col items-center justify-center md:h-[400px] md:w-[550px] h-[250px] w-[80%] bg-gray-900 bg-opacity-80 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <div className="text-xl font-bold">Bachelor of Technology</div>
             <div className="text-md">Course: Computer Science</div>
             <div className="text-md">CVR College of Engineering</div>
